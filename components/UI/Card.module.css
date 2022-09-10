@@ -1,0 +1,12 @@
+.container {
+    display: block;
+    position: absolute;
+    background-color: #F2EDEC;
+    height: 60vh;
+    width: 50%;
+    left: 25%;
+    top: 20%;
+    border: 2px solid lightgrey;
+    box-shadow: 2px 2px 4px 4px #888888;
+    min-width: 500px;
+}

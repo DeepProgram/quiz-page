@@ -1,0 +1,161 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.container {
+    height: 100%;
+    position: fixed;
+    left: 30%;
+    top: 17%;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    border: 2px solid grey;
+    box-shadow: 1px 1px grey;
+}
+
+.question-count {
+    text-align: center;
+}
+
+.question {
+    margin: 1rem;
+    text-align: center;
+}
+
+.option-flex-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5rem 0 1.8rem 0;
+}
+
+.option-item {
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px grey;
+    border-radius: 5px;
+    width: 48%;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.response-div {
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.success-msg,
+.error-msg {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.success-msg {
+    font-size: 80%;
+    color: #270;
+    background-color: #DFF2BF;
+}
+
+.error-msg {
+    font-size: 80%;
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fa-check:before {
+    margin-right: 3px;
+    content: "\f00c"
+}
+
+.fa-times-circle:before {
+    margin-right: 3px;
+    content: "\f00d"
+}
+
+.navigation-button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.button {
+    width: 20%;
+    height: 2rem;
+    margin: 0.7rem 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+
+.score-viz {
+    top: 20%;
+    left: 35%;
+    padding: 5rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #eee;
+    border: 2px solid grey;
+}
+
+
+.acme-score {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: navy;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-label {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.user-score {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
