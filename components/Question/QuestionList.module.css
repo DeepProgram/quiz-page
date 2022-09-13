@@ -1,14 +1,16 @@
 .score-viz {
-    top: 20%;
-    left: 35%;
-    padding: 5rem;
     position: absolute;
+    width: 70%;
+    left: 5%;
+    right: 5%;
+    padding: 0.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     background: #eee;
     border: 2px solid grey;
+    margin: 10% 10%;
 }
 
 

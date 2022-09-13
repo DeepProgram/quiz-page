@@ -42,7 +42,7 @@ const Question = (props) => {
     }
 
     return (
-        <div className={classes.container}>
+        <section className={classes.container}>
             <div className={classes["flexbox-container"]}>
                 <p className={classes["question-count"]}>{`Question ${props.questionCount + 1} / ${props.totalQuestionCount}`}</p>
                 <h3 className={classes["question"]}>{props.question}</h3>
@@ -60,7 +60,7 @@ const Question = (props) => {
                     {props.isAnswerCorrect!==null && <button onClick={nextButtonHandler} className={classes.button} type="click">Next</button>}
                 </div>
             </div>
-        </div>
+        </section>
 
     )
 }
