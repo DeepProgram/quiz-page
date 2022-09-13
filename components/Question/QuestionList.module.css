@@ -1,0 +1,36 @@
+.score-viz {
+    top: 20%;
+    left: 35%;
+    padding: 5rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #eee;
+    border: 2px solid grey;
+}
+
+
+.acme-score {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: navy;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-label {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.user-score {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}

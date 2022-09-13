@@ -3,9 +3,9 @@ import {createSlice} from "@reduxjs/toolkit";
 const initialState = {
     questionList: [],
     currentQuestion: {},
-    currentQuestionNo: 0,
-    totalQuestionNo:0,
-    score: 0
+    currentQuestionNo: null,
+    totalQuestionNo:null,
+    score: null
 }
 
 const questionListSlice = createSlice({
@@ -17,6 +17,8 @@ const questionListSlice = createSlice({
                 return {...questionObj, isAnswerCorrect: null}
             })
             state.currentQuestion = {...action.payload.questionList[0], isAnswerCorrect: null}
+            state.currentQuestionNo = 0
+            state.score = 0
             state.totalQuestionNo = action.payload.questionList.length
         },
         setIsAnswerCorrect: (state, action)=>{
